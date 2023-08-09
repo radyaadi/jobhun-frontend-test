@@ -5,7 +5,7 @@ export default {
     return { movies: [] };
   },
   mounted() {
-    axios.get('http://api.tvmaze.com/search/shows?q=girls').then((res) => {
+    axios.get('https://api.tvmaze.com/search/shows?q=girls').then((res) => {
       this.movies = res.data;
     });
   },
